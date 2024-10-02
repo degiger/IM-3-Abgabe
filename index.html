@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Lucerne Page</title>
+  <link rel="stylesheet" href="style.css"> <!-- Verlinkung zur externen CSS-Datei -->
 </head>
 <body>
-    
+
+  <!-- Hauptinhalt der Seite -->
+  <main>
+    <section class="welcome-section">
+      <header class="header-container">
+        <h1 class="welcome-title">WELCOME TO LUCERNE</h1>
+        <div class="subtitle-container">
+          <div class="subtitle-line"></div>
+          <div class="subtitle-line"></div>
+        </div>
+      </header>
+
+      <h2 class="main-heading">What to do today?</h2>
+
+      <div class="content-wrapper">
+        <div class="content-columns">
+          <!-- Erstes Bild -->
+          <div class="image-container">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc18688e28aec919529fb721f3d02a17dbc5773759231b5bc18e8d9c7728b1b8?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="main-image" alt="Lucerne attraction" />
+          </div>
+          <!-- Zweites Bild -->
+          <div class="image-container">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/68d9973134c489e4065c978ab3d75c8b678981f08997c226fac49bfe425d78e9?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="secondary-image" alt="Lucerne scenery" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bild direkt über dem Footer -->
+    <div class="footer-image-container">
+      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc35ec972f7198874bf69a87c738ef6c45b77cfbc3c5e08d6eed197aa040cb34?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="footer-image" alt="Lucerne cityscape" />
+    </div>
+  </main>
+
+  <!-- Footer-Bereich -->
+  <div class="footer-wrapper">
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-columns">
+          <div class="footer-logo-column">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/50cb4c061616d2781d3d500a8b0112cec7945a430845c13be6cf15395e62045f?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="footer-logo" alt="What to do logo" />
+            <h3 class="footer-title">What to do</h3>
+          </div>
+          <div class="footer-info-column">
+            <div class="footer-info-content">
+              <div class="contact-info">
+                <h4 class="contact-heading">you can find us</h4>
+                <p class="contact-details">
+                  hallo@lucerne.ch<br />
+                  +41 44 999 99 99
+                </p>
+              </div>
+              <div class="social-media-column">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/03cf2c8542173440fc27ad5958205d2f9ab369d3c4dbce5202a40a6000c6f818?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="social-media-icon" alt="Social media icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
 </body>
 </html>
