@@ -5,19 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Lucerne Page</title>
   <link rel="stylesheet" href="style.css"> <!-- Verlinkung zur externen CSS-Datei -->
+  <style>
+    /* Bildanpassungen für den Header */
+    .header-image-container {
+      width: 100%;
+    }
+    .header-image {
+      width: 100%;
+      object-fit: cover;
+      height: auto;
+    }
+    /* Responsive Anpassung */
+    @media (max-width: 991px) {
+      .header-image {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Header-Bereich mit dem Bild -->
+  <header class="header-image-container">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1c8322943568afc7984e5ee1f9e9d44b86fa85b6a41a57557718c89de40a3389?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="header-image" alt="Lucerne Header Image"/>
+  </header>
 
   <!-- Hauptinhalt der Seite -->
   <main>
     <section class="welcome-section">
-      <header class="header-container">
-        <h1 class="welcome-title">WELCOME TO LUCERNE</h1>
-        <div class="subtitle-container">
-          <div class="subtitle-line"></div>
-          <div class="subtitle-line"></div>
-        </div>
-      </header>
+
 
       <h2 class="main-heading">What to do today?</h2>
 
@@ -33,6 +50,12 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Wetterdaten werden hier eingefügt -->
+    <section>
+      <h2>Zähldaten für Orte</h2>
+      <div id="city-data"></div> <!-- Platzhalter für die Zähldaten -->
     </section>
 
     <!-- Bild direkt über dem Footer -->
@@ -68,6 +91,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="fetch.js"></script>
 
 </body>
 </html>

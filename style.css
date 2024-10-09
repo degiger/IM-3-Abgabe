@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Neue Metana";
+    src: url("assets/fonts/");
+  }
+  
+
+
+
 /* Hintergrund für den gesamten Body auf #0a6cff setzen */
 body {
     background-color: #0a6cff;
