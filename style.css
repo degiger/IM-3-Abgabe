@@ -1,60 +1,17 @@
 @font-face {
     font-family: "Neue Metana";
-    src: url("assets/fonts/"); /* Semikolon hinzugefügt */
+    src: url("/assets/fonts/"); /* Semikolon hinzugefügt */
 }
 
 /* Hintergrund für den gesamten Body auf #0a6cff setzen */
 body {
-    background-color: #0a6cff;
     margin: 0;
     font-family: "Neue Metana", sans-serif;
 }
 
-/* Welcome Section */
-.welcome-section {
-    display: flex;
-    padding-top: 53px;
-    flex-direction: column;
-    overflow: hidden;
-    background-color: inherit; /* Übernimmt die Hintergrundfarbe von body */
-}
-
-.header-container {
-    align-self: end;
-    display: flex;
-    width: 862px;
+.cloud-footer-image, .cloud-header-image {
     max-width: 100%;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.welcome-title {
-    align-self: stretch;
-    flex: 1;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    font: 400 24px Inter, sans-serif;
-}
-
-.subtitle-container {
-    align-self: start;
-    display: flex;
-    margin-top: 11px;
-    flex-direction: column;
-    align-items: end;
-}
-
-.subtitle-line {
-    border-radius: 28px;
-    display: flex;
-    min-height: 13px;
-    width: 88px;
-}
-
-.subtitle-line:last-child {
-    margin-top: 8px;
+    height: auto;
 }
 
 .main-heading {
@@ -63,138 +20,59 @@ body {
     margin-top: 106px;
     color: #fff;
     text-align: center;
-    padding: 10px;
     font: 400 96px "Neue Metana", sans-serif;
 }
 
-.content-wrapper {
-    margin-top: 174px;
+.footer-container, .header-container, .main-container {
+    background-color: #0a6cff;
+    display: flex;
     width: 100%;
-}
-
-.content-columns {
-    gap: 20px;
-    display: flex;
-}
-
-.left-column {
-    display: flex;
-    flex-direction: column;
-    line-height: normal;
-    width: 37%;
-}
-
-.image-container {
-    display: flex;
     align-items: center;
-    gap: 10px;
-    align-self: stretch;
-    justify-content: start;
-    margin: auto 0;
-    padding: 10px 10px 10px 0;
-}
-
-.main-image {
-    aspect-ratio: 0.57;
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-    align-self: stretch;
-    min-width: 240px;
-    flex: 1;
-}
-
-.right-column {
-    display: flex;
-    flex-direction: column;
-    line-height: normal;
-    width: 63%;
-    margin-left: 20px;
-}
-
-.right-content {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-}
-
-.placeholder-content {
-    display: flex;
-    height: 1115px;
-    padding: 10px 0;
-}
-
-.secondary-image-wrapper {
-    align-self: end;
-    display: flex;
-    margin-top: 61px;
-    width: 100%;
-    max-width: 1127px;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10px 0 10px 10px;
-}
-
-.secondary-image {
-    aspect-ratio: 0.99;
-    object-fit: contain;
-    object-position: center;
-    width: 100%;
-}
-
-/* Weißer Abschnitt */
-.white-section {
-    background-color: #fff;
-    display: flex;
-    margin-top: 174px;
-    width: 1056px;
-    max-width: 100%;
-    height: 851px;
-}
-
-.footer-image-container {
-    text-align: center;
-    margin: 0;
-    padding: 0; /* Entfernt Abstand zwischen Bild und Footer */
-}
-
-.footer-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0;
-}
-
-/* Neuer Footer-Bereich */
-.footer-container {
-    background-color: #fff;
-    display: flex;
-    width: 100%;
-    padding: 10px 0; /* Höhe reduziert durch verringertes Padding */
-    align-items: center;
-    gap: 0px 292px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+@media (min-width: 801px) {
+    .footer-info-container {
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 25px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-info-container {
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details {
+        text-align: center;
+    }
+}
+
+
+.copyright-container {
+    padding: 10px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}
 .contact-info {
-    align-self: stretch;
-    display: flex;
     min-width: 240px;
-    flex-direction: column;
     font-family: "Neue Metana", sans-serif; /* Anführungszeichen hinzugefügt */
     color: #0a6cff;
     font-weight: 400;
-    justify-content: center;
-    width: 327px;
-    margin: auto 0;
-    padding: 40px 0;
 }
 
 .logo-container {
     display: flex;
-    width: 273px;
-    max-width: 100%;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     font-size: 35px;
@@ -214,157 +92,40 @@ body {
     width: 100%;
 }
 
-.slogan {
-    margin-top: 8px;
-}
-
-.contact-details {
+.info-container {
     display: flex;
-    margin-top: 163px;
-    width: 100%;
+    width: 60%;
+    min-width: 300px;
     flex-direction: column;
-    font-size: 20px;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 30px;
+
+    .info-description {
+        color: #fff;
+        font-family: "Neue Metana", sans-serif; /* Anführungszeichen hinzugefügt */
+
+    }
+
+    .info-image {
+        border-radius: 25px;
+    }
+
+    .info-back-button {
+        align-self: center;
+    }
 }
 
-.contact-heading {
-    font-size: 25px;
-}
-
-.email {
-    z-index: 10;
-    margin-top: 10px;
-    width: 100%;
-    white-space: nowrap;
-}
-
-.phone {
-    margin-top: 10px;
-}
-
-.social-copyright {
-    align-self: stretch;
-    display: flex;
-    min-width: 240px;
-    flex-direction: column;
-    justify-content: center;
-    width: 439px;
-    margin: auto 0;
-    padding: 40px 0;
-}
-
-.social-icons {
-    align-self: flex-end;
-    display: flex;
-    align-items: center;
-    gap: 40px 60px;
-    justify-content: flex-start;
-}
-
-.social-icon {
-    aspect-ratio: 1;
-    object-fit: contain;
-    object-position: center;
-    width: 80px;
-    align-self: stretch;
-    margin: auto 0;
-}
-
-.copyright {
-    display: flex;
-    margin-top: 163px;
-    width: 100%;
-    padding-top: 28px;
-    flex-direction: column;
-    align-items: flex-end;
+.main-menu-button {
+    border-radius: 25px;
+    width: 72px;
+    background-color: #fff;
+    border: none;
     color: #0a6cff;
+    padding: 15px 32px;
     text-align: center;
-    justify-content: flex-start;
-    font: 400 25px "Neue Metana", sans-serif;
-}
-
-.copyright-text {
-    margin-top: 10px;
-}
-
-@media (max-width: 991px) {
-    .footer-container {
-        max-width: 100%;
-    }
-
-    .logo-wrapper {
-        margin-right: -15px;
-    }
-
-    .contact-details {
-        margin-top: 40px;
-    }
-
-    .email {
-        padding-right: 20px;
-        white-space: initial;
-    }
-
-    .social-copyright {
-        max-width: 100%;
-    }
-
-    .copyright {
-        max-width: 100%;
-        margin-top: 40px;
-    }
-
-    .copyright-text {
-        max-width: 100%;
-    }
-}
-
-
-/* Responsive Design */
-@media (max-width: 991px) {
-    .main-heading {
-        max-width: 100%;
-        font-size: 40px;
-        margin-top: 40px;
-    }
-    .content-wrapper {
-        max-width: 100%;
-        margin-top: 40px;
-    }
-    .content-columns {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-    }
-    .left-column, .right-column {
-        width: 100%;
-    }
-    .image-container {
-        max-width: 100%;
-        margin-top: 40px;
-    }
-    .main-image, .secondary-image {
-        max-width: 100%;
-    }
-    .right-content {
-        max-width: 100%;
-    }
-    .secondary-image-wrapper {
-        max-width: 100%;
-        margin-top: 40px;
-    }
-    .white-section {
-        margin-top: 40px;
-    }
-    .footer-container, .footer-content, .footer-info, .footer-column, .footer-social, .footer-copyright, .copyright-text {
-        max-width: 100%;
-        margin-top: 40px;
-    }
-    .footer-title-container {
-        margin-right: -15px;
-    }
-    .contact-email {
-        padding-right: 20px;
-        white-space: initial;
-    }
-}
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }

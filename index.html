@@ -1,97 +1,128 @@
-html: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Lucerne Page</title>
   <link rel="stylesheet" href="style.css"> <!-- Verlinkung zur externen CSS-Datei -->
-  <style>
-    /* Bildanpassungen für den Header */
-    .header-image-container {
-      width: 100%;
-    }
-    .header-image {
-      width: 100%;
-      object-fit: cover;
-      height: auto;
-    }
-    /* Responsive Anpassung */
-    @media (max-width: 991px) {
-      .header-image {
-        max-width: 100%;
-        height: auto;
-      }
-    }
-  </style>
-</head>
 <body>
-
   <!-- Header-Bereich mit dem Bild -->
-  <header class="header-image-container">
-    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/1c8322943568afc7984e5ee1f9e9d44b86fa85b6a41a57557718c89de40a3389?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="header-image" alt="Lucerne Header Image"/>
+  <header class="header-container">
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc23871795f2cf9a1852035448c1986605b31413406e4d9f4ab4d61c894fb9d9?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="cloud-header-image" alt="" />
+    <h2 class="main-heading">What to do today?</h2>
   </header>
 
   <!-- Hauptinhalt der Seite -->
-  <main>
-    <section class="welcome-section">
-      <h2 class="main-heading">What to do today?</h2>
-
-      <div class="content-wrapper">
-        <div class="content-columns">
-          <!-- Erstes Bild -->
-          <div class="image-container">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bc18688e28aec919529fb721f3d02a17dbc5773759231b5bc18e8d9c7728b1b8?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="main-image" alt="Lucerne attraction" />
-          </div>
-          <!-- Zweites Bild -->
-          <div class="image-container">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/68d9973134c489e4065c978ab3d75c8b678981f08997c226fac49bfe425d78e9?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="secondary-image" alt="Lucerne scenery" />
-          </div>
+  <main class="main-container">
+    <ul class="carrousel">
+      <li class="carrousel-item">
+        <div class="carrousel-item-content">
+          <a href="page/loewendenkmahl.html">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/0538a25dc25fb6b3199530658b1eaee1a6733c1d896ebae09ff1086a66c65d5e?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="carrousel-image" alt="" />
+          </a>
+          <p>Löwendenkmahl</p>
         </div>
-      </div>
-    </section>
-
-    <!-- Wetterdaten werden hier eingefügt -->
-    <section>
-      <h2>Zähldaten für Orte</h2>
-      <div id="city-data"></div> <!-- Platzhalter für die Zähldaten -->
-    </section>
-
-    <!-- Bild direkt über dem Footer -->
-    <div class="footer-image-container">
-      <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cc35ec972f7198874bf69a87c738ef6c45b77cfbc3c5e08d6eed197aa040cb34?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="footer-image" alt="Lucerne cityscape" />
-    </div>
+      </li>
+      <li class="carrousel-item">
+        <div class="carrousel-item-content">
+          <a href="page/hertenstrasse.html">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/675363f5e2d0bba5f7ffe91fb972b71503f424ac1b6ae1fac644f858152d1c4c?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="carrousel-image" alt="" />
+          </a>
+          <p>Hertenstrasse</p>
+        </div>
+      </li>
+      <li class="carrousel-item">
+        <div class="carrousel-item-content">
+          <a href="page/kappellbruecke.html">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/7851f5da0383b96e8b1b1266c20841360bbbbb2372e6db7dcd0b41aa16ba5c5e?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="carrousel-image" alt="" />
+          </a>
+          <p>Kappellbrücke</p>
+        </div>
+      </li>
+      <li class="carrousel-item">
+        <div class="carrousel-item-content">
+          <a href="page/rathaus.html">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/23073b051cca9e4810d965ede976ef953d126b44818bc441be306bf135a75fc3?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="carrousel-image" alt="" />
+          </a>
+          <p>Rathaus</p>
+        </div>
+      </li>
+      <li class="carrousel-item">
+        <div class="carrousel-item-content">
+          <a href="page/schwanenplatz.html">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8e29afd2a0380482d283ec4f4bbb96d3d04d5fd59384a1f7c9b45c51842bb726?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="carrousel-image" alt="" />
+          </a>
+          <p>Schwanenplatz</p>
+        </div>
+      </li>
+    </ul>
   </main>
-
   <!-- Neuer Footer-Bereich -->
   <footer class="footer-container">
-    <section class="contact-info">
-      <div class="logo-container">
-        <div class="logo-wrapper">
-          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b2a1f223fb0b4050e4e7140f54c9a85996f1bb4ce2232378d771c1f5ac72c44a?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="logo" alt="Company logo" />
-          <h3 class="slogan">What to do</h3>
+    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bbf29476bab1666e157b191e30a999e687a5bcd28707f75cca7ac19387943679?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="cloud-footer-image" alt="" />
+    <div class="footer-info-container">
+      <section class="contact-info">
+        <div class="logo-container">
+          <div class="logo-wrapper">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b2a1f223fb0b4050e4e7140f54c9a85996f1bb4ce2232378d771c1f5ac72c44a?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="logo" alt="Company logo" />
+            <h3 class="slogan">What to do</h3>
+          </div>
         </div>
-      </div>
-      <div class="contact-details">
-        <h3 class="contact-heading">you can find us</h3>
-        <p class="email">hallo@lucerne.ch</p>
-        <p class="phone">+41 44 999 99 99</p>
-      </div>
-    </section>
-    <section class="social-copyright">
-      <div class="social-icons">
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/65d102e59d71974fa7036a2282421329f8f1508246bec7eef779efbe22a4bb80?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="social-icon" alt="Social media icon 1" />
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/936774cd2f04a92250ed8004df27d836977b50e19e6436974dd838f1f42ecb05?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="social-icon" alt="Social media icon 2" />
-        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f65b807e5b5111dded53526a71470b4cc1474b93453b5ec931ce87569accdb5a?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="social-icon" alt="Social media icon 3" />
-      </div>
-      <div class="copyright">
-        <p>made by doppel d</p>
-        <p class="copyright-text">© 2024. All rights reserved.</p>
-      </div>
-    </section>
+        <div class="contact-details">
+          <h3 class="contact-heading">you can find us</h3>
+          <p class="email">hallo@lucerne.ch</p>
+          <p class="phone">+41 44 999 99 99</p>
+        </div>
+      </section>
+      <section class="socials">
+        <div class="social-icons">
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/65d102e59d71974fa7036a2282421329f8f1508246bec7eef779efbe22a4bb80?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="social-icon" alt="Social media icon 1" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/936774cd2f04a92250ed8004df27d836977b50e19e6436974dd838f1f42ecb05?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="social-icon" alt="Social media icon 2" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/f65b807e5b5111dded53526a71470b4cc1474b93453b5ec931ce87569accdb5a?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="social-icon" alt="Social media icon 3" />
+        </div>
+      </section>
+    </div>
+    <div class="copyright-container">
+        <strong>made by doppel d</strong> © 2024. All rights reserved.
+    </div>
   </footer>
-  
-
-  <script src="fetch.js"></script>
-
 </body>
+<style>
+  .carrousel {
+  display: flex;
+  gap: 30px;
+  padding: 16px;
+
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  }
+
+  .carrousel-item {
+      flex-shrink: 0;
+      width: 30%;
+      min-width: 300px;
+      scroll-snap-align: center;
+  }
+
+  .carrousel-item-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+    
+      font-family: "Neue Metana", sans-serif; /* Anführungszeichen hinzugefügt */
+      font-size: 24px;
+      color: white;
+      font-weight: bold;
+  }
+
+  .carrousel-image {
+      border-radius: 25px;
+      max-width: 100%;
+  }
+</style>
 </html>
