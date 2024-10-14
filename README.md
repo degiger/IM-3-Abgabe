@@ -1,2 +1,3 @@
 # IM 3 - Abgabe
- 
+ Unser Projekt war die Entwicklung einer Webseite, die die Besucherfrequenzen der fünf Hauptattraktionen Luzerns – Löwendenkmal, Kapellbrücke, Hertenstrasse, Rathaus und Schwanenplatz – in darstellt. Dabei stellten wir fest, dass der Aufwand viel grösser war als erwartet, vor allem aufgrund der technischen Herausforderungen. Obwohl KI-Tools wie ChatGPT eingesetzt wurden, mussten viele Aufgaben manuell gelöst werden, da generierte Codes oft fehlerhaft waren. Der knappe Zeitrahmen von nur drei Wochen und das erneute Aufarbeiten von Themen aus dem Vorjahr erschwerten die Arbeit zusätzlich. Genutzte Ressourcen: ChatGPT, Builder.io.
+
