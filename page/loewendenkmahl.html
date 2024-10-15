@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Lucerne Page</title>
   <link rel="stylesheet" href="../style.css"> <!-- Verlinkung zur externen CSS-Datei -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <!-- Header-Bereich mit dem Bild -->
@@ -21,7 +22,24 @@
         <h1>Löwendenkmahl</h1>
         <p>Das Löwendenkmal in Luzern ist ein berühmtes Denkmal, das an die Schweizer Gardisten erinnert, die 1792 während der Französischen Revolution in den Tuilerien in Paris ihr Leben verloren. Es wurde 1821 in einen Felsen gehauen und zeigt einen sterbenden Löwen, der auf einem zerbrochenen Schild liegt, mit einem Schweizer Kreuz darauf. Das Denkmal, entworfen von Bertel Thorvaldsen und in den Fels gemeißelt von Lukas Ahorn, gilt als eines der bewegendsten Denkmäler der Welt. Es symbolisiert Mut, Treue und Opferbereitschaft und zieht jährlich zahlreiche Besucher an.</p>
       </div>
-      <div>Diagram</div>
+          <!-- Weekday selector and chart -->
+          <div>
+            <label for="weekday-select">Choose a weekday:</label>
+            <select id="weekday-select">
+              <option value="1">Monday</option>
+              <option value="2">Tuesday</option>
+              <option value="3">Wednesday</option>
+              <option value="4">Thursday</option>
+              <option value="5">Friday</option>
+              <option value="6">Saturday</option>
+              <option value="7">Sunday</option>
+            </select>
+          </div>
+    
+          <div>
+            <canvas data-place="Löwendenkmal" id="weekDay-Pedestrians"></canvas>
+          </div>
+
       <div class="info-back-button">
         <a href="../" class="main-menu-button">Zurück</a>
       </div>
@@ -58,5 +76,6 @@
   </footer>
 
   <script src="../fetch.js"></script>
+  <script src="../js/diagram.js"></script>
 </body>
 </html>

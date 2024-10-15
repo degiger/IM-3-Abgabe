@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Lucerne Page</title>
   <link rel="stylesheet" href="../style.css"> <!-- Verlinkung zur externen CSS-Datei -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
 <body>
   <!-- Header-Bereich mit dem Bild -->
   <header class="header-container">
@@ -17,10 +19,27 @@
     <div class="info-container">
       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/23073b051cca9e4810d965ede976ef953d126b44818bc441be306bf135a75fc3?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="info-image" alt="" />
       <div class="info-description">
-        <h1>Rathaus</h1>
+        <h1>Rathausquai</h1>
         <p>Das Rathaus in Luzern ist ein markantes Bauwerk im Herzen der Altstadt, direkt am Ufer der Reuss. Es wurde zwischen 1602 und 1606 im italienischen Renaissance-Stil errichtet, besitzt jedoch ein markantes Schweizer Satteldach. Der Turm und die Arkaden im Erdgeschoss verleihen dem Gebäude eine besondere historische Atmosphäre. Das Rathaus war einst das politische Zentrum der Stadt und wird heute für verschiedene städtische Zwecke genutzt. Der angrenzende Kornmarkt und das prächtige Gebäude sind ein beliebter Treffpunkt und spiegeln die reiche Geschichte Luzerns wieder.</p>
       </div>
-      <div>Diagram</div>
+      <div>    <!-- Weekday selector and chart -->
+          <label class="weekday-label" class="weekday-label" for="weekday-select">Choose a weekday:</label>
+          <select id="weekday-select">
+            <option value="1">Monday</option>
+            <option value="2">Tuesday</option>
+            <option value="3">Wednesday</option>
+            <option value="4">Thursday</option>
+            <option value="5">Friday</option>
+            <option value="6">Saturday</option>
+            <option value="7">Sunday</option>
+          </select>
+        </div>
+  
+        <!-- Chart Canvas -->
+        <div>
+          <canvas data-place="Rathausquai" id="weekDay-Pedestrians"></canvas>
+        </div>
+  
       <div class="info-back-button">
         <a href="../" class="main-menu-button">Zurück</a>
       </div>
@@ -57,5 +76,6 @@
   </footer>
   
   <script src="../fetch.js"></script>
+  <script src="../js/diagram.js"></script>
 </body>
 </html>

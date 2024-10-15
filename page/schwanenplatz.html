@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Lucerne Page</title>
   <link rel="stylesheet" href="../style.css"> <!-- Verlinkung zur externen CSS-Datei -->
+  <!-- Chart.js 4.4.4 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
 <body>
   <!-- Header-Bereich mit dem Bild -->
   <header class="header-container">
@@ -18,14 +21,34 @@
       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8e29afd2a0380482d283ec4f4bbb96d3d04d5fd59384a1f7c9b45c51842bb726?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="info-image" alt="" />
       <div class="info-description">
         <h1>Schwanenplatz</h1>
-        <p>Der Schwanenplatz in Luzern ist ein zentraler und belebter Platz, der vor allem für seine Luxusuhren- und Schmuckgeschäfte bekannt ist, darunter das weltberühmte Geschäft von Bucherer. Der Platz liegt in unmittelbarer Nähe zum Vierwaldstättersee und ist ein wichtiger Knotenpunkt für den öffentlichen Verkehr sowie ein beliebter Treffpunkt für Einheimische und Touristen. Vom Schwanenplatz aus hat man einen schönen Blick auf die umliegenden Sehenswürdigkeiten, wie die Kapellbrücke und den Pilatus. Er dient oft als Ausgangspunkt für Stadtbesichtigungen und lädt zum Bummeln entlang der Promenade ein.</p>
+        <p>Der Schwanenplatz in Luzern ist ein zentraler und belebter Platz, der vor allem für seine Luxusuhren- und Schmuckgeschäfte bekannt ist.</p>
       </div>
-      <div>Diagram</div>
+
+      <!-- Weekday selector and chart -->
+      <div>
+        <label class="weekday-label" for="weekday-select">Choose a weekday: </label>
+        <select id="weekday-select">
+          <option value="1">Monday</option>
+          <option value="2">Tuesday</option>
+          <option value="3">Wednesday</option>
+          <option value="4">Thursday</option>
+          <option value="5">Friday</option>
+          <option value="6">Saturday</option>
+          <option value="7">Sunday</option>
+        </select>
+      </div>
+
+      <!-- Chart Canvas -->
+      <div>
+        <canvas data-place="schwanenplatz" id="weekDay-Pedestrians"></canvas>
+      </div>
+
       <div class="info-back-button">
         <a href="../" class="main-menu-button">Zurück</a>
       </div>
     </div>
   </main>
+
   <!-- Neuer Footer-Bereich -->
   <footer class="footer-container">
     <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/bbf29476bab1666e157b191e30a999e687a5bcd28707f75cca7ac19387943679?placeholderIfAbsent=true&apiKey=410e518ffd6a4433bd1ceba2e2a00ab1" class="cloud-footer-image" alt="" />
@@ -55,7 +78,7 @@
         <strong>made by doppel d</strong> © 2024. All rights reserved.
     </div>
   </footer>
-  
-  <script src="../fetch.js"></script>
+
+  <script src="../js/diagram.js"></script>
 </body>
 </html>

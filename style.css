@@ -1,6 +1,13 @@
 @font-face {
     font-family: "Neue Metana";
-    src: url("/assets/fonts/"); /* Semikolon hinzugefügt */
+    src: url("assets/fonts/NeueMetana-Regular.woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Neue Metana";
+    src: url("assets/fonts/NeueMetana-Bold.woff");
+    font-weight: bold;
 }
 
 /* Hintergrund für den gesamten Body auf #0a6cff setzen */
@@ -129,3 +136,14 @@ body {
     margin: 4px 2px;
     cursor: pointer;
   }
+.übertitel {
+    color: white;
+    text-align: center;
+    min-width: 240px;
+}
+
+.weekday-label{
+
+    color: #fff;
+  
+}
